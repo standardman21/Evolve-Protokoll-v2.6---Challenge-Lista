@@ -1,0 +1,93 @@
+/* Custom styles for Evolve Protokoll v2.6 Community Challenges */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Markdown content styling */
+#markdownContent h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1e40af;
+}
+
+#markdownContent h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #1e40af;
+}
+
+#markdownContent h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#markdownContent p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+#markdownContent ul {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+#markdownContent ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+#markdownContent ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #2563eb;
+    border-radius: 50%;
+}
+
+/* Emoji styling for list items */
+#markdownContent ul li strong {
+    color: #065f46;
+}
+
+/* Search input styling */
+#searchInput {
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Code block styling */
+pre {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        space-y-2;
+    }
+    #markdownContent h1 {
+        font-size: 1.75rem;
+    }
+    #markdownContent h2 {
+        font-size: 1.25rem;
+    }
+}
