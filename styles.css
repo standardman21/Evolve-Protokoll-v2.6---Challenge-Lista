@@ -1,95 +1,81 @@
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  margin: 0;
+  padding: 1.5rem;
 }
+
+h1, h2, h3 {
+  color: #2563eb; /* kék főszín */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  margin: 1rem 0;
 }
+
 th, td {
-    border: 1px solid #e5e7eb;
-    padding: 0.75rem;
-    text-align: left;
+  padding: 1rem 1.25rem;
+  background: white;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  border-radius: 0.375rem;
+  text-align: left;
 }
+
 th {
-    background-color: #f3f4f6;
-    font-weight: 600;
+  background-color: #e0e7ff;
+  color: #1e40af;
+  font-weight: 600;
 }
-.green { background-color: #d1fae5; color: #065f46; }
-.yellow { background-color: #fef9c3; color: #713f12; }
-.blue { background-color: #dbeafe; color: #1e40af; }
-.red { background-color: #fee2e2; color: #991b1b; }
-#markdownContent h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #1e40af;
+
+td.green {
+  background-color: #d1fae5;
+  color: #065f46;
 }
-#markdownContent h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: #1e40af;
+
+td.yellow {
+  background-color: #fef3c7;
+  color: #92400e;
 }
-#markdownContent h3 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+
+td.blue {
+  background-color: #dbeafe;
+  color: #1e40af;
 }
-#markdownContent p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
+
+td.red {
+  background-color: #fee2e2;
+  color: #991b1b;
 }
-#markdownContent ul {
-    margin-bottom: 1rem;
-    padding-left: 2rem;
-    list-style-type: none;
+
+/* Keresés highlight */
+.highlight {
+  background-color: #fef3c7;
 }
-#markdownContent ul li {
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: 0.5rem;
+
+/* Linkek */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
-#markdownContent ul li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    width: 0.75rem;
-    height: 0.75rem;
-    background-color: #2563eb;
-    border-radius: 50%;
+
+a:hover {
+  color: #1e40af;
+  text-decoration: underline;
 }
-#markdownContent ul li strong {
-    color: #065f46;
-}
-#searchInput {
-    transition: border-color 0.3s;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    width: 100%;
-}
-#searchInput:focus {
-    border-color: #2563eb;
-    outline: none;
-}
+
+/* Egyéb finomságok */
 pre {
-    background-color: #f9fafb;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    overflow-x: auto;
-}
-@media (max-width: 768px) {
-    table {
-        font-size: 0.875rem;
-    }
-    #markdownContent h1 {
-        font-size: 1.75rem;
-    }
-    #markdownContent h2 {
-        font-size: 1.25rem;
-    }
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  color: #374151;
 }
